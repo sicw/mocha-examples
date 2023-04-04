@@ -1,5 +1,6 @@
+/* 这里的配置,都可以在使用命令时指定设置出来 像:mocha --require ts-node/register */
 {
-  "extension": ["ts"],
-  "spec": "src/**/*.spec.ts",
-  "require": "ts-node/register"
+  "extension": ["js","cjs","mjs","ts"],          /* 扩展文件 */
+  "spec": "src/**/*.spec.ts",                    /* **表示递归匹配 指定测试文件 */
+  "require": "ts-node/register"                  /* 需要的模块 */
 }
